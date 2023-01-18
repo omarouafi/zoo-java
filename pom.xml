@@ -46,7 +46,7 @@
   </build>
   <name>Archetype - zoo23</name>
   <url>http://maven.apache.org</url>
-  
+
   <properties>
     <java.version>16</java.version>
     <maven.compiler.source>1.6</maven.compiler.source>
