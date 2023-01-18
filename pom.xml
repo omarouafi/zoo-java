@@ -22,7 +22,8 @@
     <java.version>16</java.version>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
-
+    <!-- SONAR -->
+    <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
   </properties>
   <dependencies>
 
