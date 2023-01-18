@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63a8dc38-a292-4f07-992f-e342b21647a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/zoo/GazelleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/GazelleTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/zoo/LionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/LionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/zoo/SingeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/SingeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/zoo/ZooTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/ZooTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
       <workItem from="1673945983277" duration="5766000" />
       <workItem from="1673961248303" duration="3497000" />
       <workItem from="1673968580400" duration="536000" />
-      <workItem from="1674029848272" duration="5042000" />
+      <workItem from="1674029848272" duration="5389000" />
     </task>
     <servers />
   </component>
