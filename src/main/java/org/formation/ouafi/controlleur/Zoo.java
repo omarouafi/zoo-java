@@ -32,7 +32,6 @@ public class Zoo {
 		Cage tmp = null;
 		lesCages = new Vector<Cage>();
 		try {
-			System.out.println("eed");
 			tmp = new Cage(101,201);
 			tmp.ouvrir();
 				tmp.entrer(new Singe("Cheeta",2,25));
