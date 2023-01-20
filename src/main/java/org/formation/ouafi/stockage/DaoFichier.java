@@ -8,7 +8,7 @@ public class DaoFichier<T> implements Dao<T> {
     public List<T> tous;
     private static final String NOM="./zoo.data";
     public DaoFichier() {
-        enregistrer();
+        charger();
     }
 
     @Override
@@ -36,10 +36,18 @@ public class DaoFichier<T> implements Dao<T> {
 
     }
 
-    private void ecrireFichier(){
-        DaoMemoire dao;
-        try(ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(NOM))){
-            os.writeObject(tous);
+    private void ecrire(){
+        try(ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream((NOM)))) {
+             os.writeObject(tous);
+        }catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void charger(){
+        DaoMemoire dao= null;
+        try(ObjectInputStream is = new ObjectInputStream(new FileInputStream(NOM))){
+            tous = (List<T>) is.readObject();
         }catch (FileNotFoundException e){
             dao = new DaoMemoire();
             tous = (List<T>) dao.lireTous();
@@ -58,6 +66,6 @@ public class DaoFichier<T> implements Dao<T> {
     }
 
     public void enregistrer(){
-        ecrireFichier();
+        ecrire();
     }
 }

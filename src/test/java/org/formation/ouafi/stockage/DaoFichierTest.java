@@ -8,11 +8,11 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DaoFichierTest {
-    private static DaoFichier<CagePojo> dao = new DaoFichier<>();
+
     @Test
     void lireTous() {
+        DaoFichier<CagePojo> dao = new DaoFichier<CagePojo>();
         List<CagePojo> tous = dao.lireTous();
-        assertEquals(5, tous.size());
-
+        assertEquals(1, tous.size());
     }
 }
