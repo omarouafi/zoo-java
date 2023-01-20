@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a8dc38-a292-4f07-992f-e342b21647a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/CagePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/GazellePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoMemoire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/utilitaire/Conversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/org/formation/ouafi/model/ConversionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/org/formation/ouafi/stockage/DaoMemoireTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/controlleur/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/controlleur/Zoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/org/formation/ouafi/model/ConversionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/formation/ouafi/model/ConversionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/org/formation/ouafi/stockage/DaoMemoireTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/formation/ouafi/stockage/DaoMemoireTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/zoo/GazelleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/GazelleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/zoo/LionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/LionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/zoo/SingeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/SingeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/zoo/ZooTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/ZooTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +59,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Cloud\amu\zoo23" />
       <recent name="C:\Users\Cloud\amu\zoo23\src" />
+      <recent name="C:\Users\Cloud\amu\zoo23" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -87,7 +83,7 @@
       <workItem from="1673968580400" duration="536000" />
       <workItem from="1674029848272" duration="18659000" />
       <workItem from="1674201718104" duration="2349000" />
-      <workItem from="1674206817552" duration="1141000" />
+      <workItem from="1674206817552" duration="1446000" />
     </task>
     <servers />
   </component>
