@@ -79,6 +79,20 @@ public class CagePojo implements Serializable {
         return y;
     }
 
+    @Override
+    public String toString() {
+        return "CagePojo{" +
+                "id=" + id +
+                ", gazelle=" + gazelle +
+                ", codeAnimal='" + codeAnimal + '\'' +
+                ", nom='" + nom + '\'' +
+                ", age=" + age +
+                ", poids=" + poids +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
+    }
+
     public CagePojo(int id, String codeAnimal, String nom, int age, double poids, int x, int y) {
         this.id = id;
         this.codeAnimal = codeAnimal;

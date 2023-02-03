@@ -11,6 +11,20 @@ public class GazellePojo implements Serializable {
 
     private GazellePojo gazelle;
 
+    @Override
+    public String toString() {
+        return "GazellePojo{" +
+                "id=" + id +
+                ", idAnimal=" + idAnimal +
+                ", lgCornes=" + lgCornes +
+                ", gazelle=" + gazelle +
+                '}';
+    }
+
+    public GazellePojo() {
+
+    }
+
     public GazellePojo getGazelle() {
         return gazelle;
     }

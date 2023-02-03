@@ -15,11 +15,18 @@
 # https://docs.gitlab.com/ee/development/cicd/templates.html
 # This specific template is located at:
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
+image: maven:3-openjdk-17
 
-image: maven:3-openjdk-16
+services:
+  - name: vincensini/zoomysql
+    alias: mysql
+
 variables:
   SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
   GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+  MYSQL_HOST: 'mysql'
+  MYSQL_DATABASE: 'zoo'
+  MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
 cache:
   key: "${CI_JOB_NAME}"
   paths:
@@ -28,6 +35,7 @@ cache:
 
 stages:          # List of stages for jobs, and their order of execution
   - build
+  - connect
   - test
   - quality
   - deploy
@@ -38,18 +46,16 @@ build-job:       # This job runs in the build stage, which runs first.
     - 'mvn clean'
     - 'mvn compile'
 
+connect-job:
+  stage: connect
+  image: vincensini/zoomysql
+  script:
+    - echo "base chargee et accessible"
+
 unit-test-job:   # This job runs in the test stage.
   stage: test    # It only starts when the job in the build stage completes successfully.
   script:
-    - echo "Running unit tests... This will take about 60 seconds."
-    - sleep 10
-    - echo "Code coverage is 90%"
-
-lint-test-job:   # This job also runs in the test stage.
-  stage: test    # It can run at the same time as unit-test-job (in parallel).
-  script:
     - 'mvn test'
-    - echo "No lint issues found."
 
 quality-job:
   stage: quality
@@ -59,8 +65,7 @@ quality-job:
     - 'mvn sonar:sonar -Dsonar.projectKey=ouafi'
   allow_failure: true
   only:
-    - master
-
+    - main
 
 deploy-job:      # This job runs in the deploy stage.
   stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
@@ -68,3 +73,5 @@ deploy-job:      # This job runs in the deploy stage.
   script:
     - echo "Deploying application..."
     - echo "Application successfully deployed."
+
+
