@@ -15,28 +15,6 @@ class DaoJDBCImplTest {
         tous = dao.lireTous();
         assertNotNull(tous);
         assertEquals(5,tous.size());
-
-
-
     }
 
-    @Test
-    void lire() {
-    }
-
-    @Test
-    void creer() {
-    }
-
-    @Test
-    void modifier() {
-    }
-
-    @Test
-    void supprimer() {
-    }
-
-    @Test
-    void transfo() {
-    }
 }

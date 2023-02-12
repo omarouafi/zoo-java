@@ -17,6 +17,7 @@ public class DaoJDBC {
 
     public DaoJDBC(){
         try {
+//            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/zoo","root","");
             con = DriverManager.getConnection("jdbc:mysql://mysql:3306/zoo","root","!adm1n1strat3ur?");
         } catch (SQLException e) {
             throw new RuntimeException(e);
