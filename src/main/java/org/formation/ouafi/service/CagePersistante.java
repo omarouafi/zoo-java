@@ -6,7 +6,11 @@ import org.formation.ouafi.stockage.Dao;
 public class CagePersistante {
 
 
-    public CagePersistante(){}
+
+    public CagePersistante(Cage cage){
+        this.cage = cage;
+    }
+
     public CagePersistante(Cage cage, Dao dao, CagePojo cp){
         this.cage = cage;
         this.dao = dao;
@@ -39,5 +43,9 @@ public class CagePersistante {
 
     public void setCp(CagePojo cp) {
         this.cp = cp;
+    }
+
+    public void nourrir(){
+        this.cage.getOccupant().manger();
     }
 }

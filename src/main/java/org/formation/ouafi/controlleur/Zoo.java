@@ -12,6 +12,7 @@ import org.formation.ouafi.model.Singe;
 import org.formation.ouafi.model.technique.BeurkException;
 import org.formation.ouafi.model.technique.CagePleineException;
 import org.formation.ouafi.model.technique.PorteException;
+import org.formation.ouafi.service.CagePersistante;
 
 /**
  * 
@@ -19,7 +20,7 @@ import org.formation.ouafi.model.technique.PorteException;
  *
  */
 public class Zoo {
-	private List<Cage> lesCages;
+	private List<CagePersistante> lesCages;
 	public Zoo() {
 		lesCages = null;
 		init();
@@ -29,35 +30,35 @@ public class Zoo {
 	 */
 	private void init()
 	{
-		Cage tmp = null;
-		lesCages = new Vector<Cage>();
+		CagePersistante tmp = null;
+		lesCages = new Vector<CagePersistante>();
 		try {
-			tmp = new Cage(101,201);
-			tmp.ouvrir();
-				tmp.entrer(new Singe("Cheeta",2,25));
-			tmp.fermer();
+			tmp = new CagePersistante(new Cage(101,201));
+			tmp.getCage().ouvrir();
+				tmp.getCage().entrer(new Singe("Cheeta",2,25));
+			tmp.getCage().fermer();
 			lesCages.add(tmp);
 			
-			tmp = new Cage(100,50);
-			tmp.ouvrir();
-			tmp.entrer(new Lion("Simba",3,20));
-			tmp.fermer();
+			tmp = new CagePersistante( new Cage(100,50));
+			tmp.getCage().ouvrir();
+			tmp.getCage().entrer(new Lion("Simba",3,20));
+			tmp.getCage().fermer();
 			lesCages.add(tmp);
 			
-			tmp = new Cage(150,250); //CAGE VIDE
-			tmp.fermer();
+			tmp = new CagePersistante( new Cage(150,250)); //CAGE VIDE
+			tmp.getCage().fermer();
 			lesCages.add(tmp);
 			
-			tmp = new Cage(90,230);
-			tmp.ouvrir();
-			tmp.entrer(new Gazelle("Lady Gaga",20,75,10));
-			tmp.fermer();
+			tmp = new CagePersistante( new Cage(90,230));
+			tmp.getCage().ouvrir();
+			tmp.getCage().entrer(new Gazelle("Lady Gaga",20,75,10));
+			tmp.getCage().fermer();
 			lesCages.add(tmp);
 			
-			tmp = new Cage(60,100);
-			tmp.ouvrir();
-			tmp.entrer(new Singe("Baloo",30,30));
-			tmp.fermer();
+			tmp = new CagePersistante( new Cage(60,100));
+			tmp.getCage().ouvrir();
+			tmp.getCage().entrer(new Singe("Baloo",30,30));
+			tmp.getCage().fermer();
 			lesCages.add(tmp);
 		} catch (PorteException e) {
 			// TODO Auto-generated catch block
@@ -75,9 +76,9 @@ public class Zoo {
 	public void nourrir ()
 	{
 		for (int i = 0; i < lesCages.size(); i++) {
-			if (lesCages.get(i).getOccupant() != null)
+			if (lesCages.get(i).getCage().getOccupant() != null)
 			{
-				lesCages.get(i).getOccupant().manger();
+				lesCages.get(i).nourrir();
 			}
 		}
 	}
@@ -91,23 +92,23 @@ public class Zoo {
 	{
 		Mangeable laBeteConvoitee = null;
 		String s = "INCOMPATIBLE";
-		if (lesCages.get(mange).getOccupant() != null && lesCages.get(mangeur).getOccupant() != null && lesCages.get(mange).getOccupant() instanceof Mangeable)
+		if (lesCages.get(mange).getCage().getOccupant() != null && lesCages.get(mangeur).getCage().getOccupant() != null && lesCages.get(mange).getCage().getOccupant() instanceof Mangeable)
 			{
-				lesCages.get(mange).ouvrir();
+				lesCages.get(mange).getCage().ouvrir();
 				try {
-					laBeteConvoitee = (Mangeable)lesCages.get(mange).sortir();
+					laBeteConvoitee = (Mangeable)lesCages.get(mange).getCage().sortir();
 				} catch (PorteException e2) {
 					e2.printStackTrace();
 				}
 				try
 				{
-					s = lesCages.get(mangeur).getOccupant().manger(laBeteConvoitee);
+					s = lesCages.get(mangeur).getCage().getOccupant().manger(laBeteConvoitee);
 				}
 				catch (BeurkException e)
 				{
 					s = e.getMessage();
 					try {
-						lesCages.get(mange).entrer((Animal)laBeteConvoitee);
+						lesCages.get(mange).getCage().entrer((Animal)laBeteConvoitee);
 					} catch (PorteException e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
@@ -115,7 +116,7 @@ public class Zoo {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-					lesCages.get(mange).fermer();
+					lesCages.get(mange).getCage().fermer();
 				}
 		}
 		return s;
@@ -123,8 +124,8 @@ public class Zoo {
 
 	public List<String> getInfos() {
 		List<String> ret = new Vector<String>();
-		for (Cage cage:lesCages) {
-			ret.add(cage.toString());
+		for (CagePersistante cage:lesCages) {
+			ret.add(cage.getCage().toString());
 		}
 		return ret;
 
