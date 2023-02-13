@@ -62,7 +62,7 @@ quality-job:
   script:
     - 'mvn verify'
     - 'mvn jacoco:report'
-    - 'mvn sonar:sonar -Dsonar.projectKey=ouafi'
+    - 'mvn sonar:sonar -Dsonar.projectKey=ouafi_zoo23'
   allow_failure: true
   only:
     - master
