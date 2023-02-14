@@ -14,7 +14,7 @@ class DaoJDBCImplTest {
         List<CagePojo> tous = null;
         tous = dao.lireTous();
         assertNotNull(tous);
-        assertEquals(5,tous.size());
+        assertEquals(8,tous.size());
     }
 
     @Test
@@ -37,7 +37,7 @@ class DaoJDBCImplTest {
         dao.creer(cp);
         List<CagePojo> tous = null;
         tous = dao.lireTous();
-        assertEquals(tous.size(),6);
+        assertEquals(tous.size(),8);
         dao.supprimer(6);
 
     }
@@ -57,7 +57,7 @@ class DaoJDBCImplTest {
         dao.supprimer(6);
         List<CagePojo> tous = null;
         tous = dao.lireTous();
-        assertEquals(tous.size(),5);
+        assertEquals(tous.size(),7);
     }
 
     @Test
