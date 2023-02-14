@@ -5,7 +5,7 @@ import org.formation.ouafi.controlleur.Zoo;
 public class Lanceur {
 	private Zoo z;
 	public Lanceur() {
-		z = new Zoo();
+		z = Zoo.getInstance();
 	}
 	public void afficher() {
 		for (String s : z.getInfos()) {

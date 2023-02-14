@@ -19,7 +19,7 @@ public class Conversion {
         Constructor<?> construct;
         Class<?> laClasse;
         ret = new Cage(cp.getX(),cp.getY());
-        if(cp.getCodeAnimal().equals("Gazelle")){
+        if( cp.getCodeAnimal() != null && cp.getCodeAnimal().equals("Gazelle")){
             lesTypes = new Class<?>[4];
             lesValeurs = new Object[4];
 
