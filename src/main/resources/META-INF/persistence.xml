@@ -8,9 +8,9 @@
 		<class>org.formation.ouafi.service.CagePojo</class>
 		<class>org.formation.ouafi.service.GazellePojo</class>
 		<properties>
-			<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/zoo"/>
+			<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://mysql:3306/zoo"/>
 			<property name="jakarta.persistence.jdbc.user" value="root"/>
-			<property name="jakarta.persistence.jdbc.password" value=""/>
+			<property name="jakarta.persistence.jdbc.password" value="!adm1n1strat3ur?"/>
 			<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 		</properties>
 	</persistence-unit>

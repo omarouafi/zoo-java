@@ -20,13 +20,13 @@ class DaoJDBCImplTest {
     @Test
     void lire(){
         CagePojo cp = dao.lire(1);
-        assertEquals(cp.getId(),1);
+        assertEquals(cp.getIdAnimal(),1);
     }
 
     @Test
     void cree(){
         CagePojo cp = new CagePojo();
-        cp.setId(6);
+        cp.setIdAnimal(6);
         cp.setX(630);
         cp.setY(120);
         cp.setNom("Aken");
@@ -45,7 +45,7 @@ class DaoJDBCImplTest {
     @Test
     void supprimer(){
         CagePojo cp = new CagePojo();
-        cp.setId(6);
+        cp.setIdAnimal(6);
         cp.setX(630);
         cp.setY(120);
         cp.setNom("Aken");
@@ -63,7 +63,7 @@ class DaoJDBCImplTest {
     @Test
     void modifier(){
         CagePojo cp = new CagePojo();
-        cp.setId(6);
+        cp.setIdAnimal(6);
         cp.setX(630);
         cp.setY(120);
         cp.setNom("Aken");
@@ -74,7 +74,7 @@ class DaoJDBCImplTest {
         dao.creer(cp);
         cp.setNom("Oper");
         dao.modifier(cp);
-        cp = dao.lire(cp.getId());
+        cp = dao.lire(cp.getIdAnimal());
         assertEquals(cp.getNom(),"Oper");
         dao.supprimer(6);
     }

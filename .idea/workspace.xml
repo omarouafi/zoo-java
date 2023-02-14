@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a8dc38-a292-4f07-992f-e342b21647a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db56f491a99cfb1b10d2d3722636ca6903b85c6d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zoo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zoo.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/CagePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/CagePojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/GazellePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/GazellePojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/formation/ouafi/model/ConversionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/formation/ouafi/model/ConversionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/formation/ouafi/stockage/DaoJDBCImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/formation/ouafi/stockage/DaoJDBCImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zoo.data" beforeDir="false" afterPath="$PROJECT_DIR$/zoo.data" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,35 +94,19 @@
       <recent name="org.formation.ouafi.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DaoJPATest.testLireTous">
-    <configuration name="DaoJDBCImplTest.cree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in zoo23 (1)">
+    <configuration name="All in zoo23 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.formation.ouafi.stockage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.formation.ouafi.stockage" />
-      <option name="MAIN_CLASS_NAME" value="org.formation.ouafi.stockage.DaoJDBCImplTest" />
-      <option name="METHOD_NAME" value="cree" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoJDBCImplTest.lire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in zoo23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.formation.ouafi.stockage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.formation.ouafi.stockage" />
-      <option name="MAIN_CLASS_NAME" value="org.formation.ouafi.stockage.DaoJDBCImplTest" />
-      <option name="METHOD_NAME" value="lire" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoJDBCImplTest.modifier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaoJPATest.testCreerSupprimer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
       <extension name="coverage">
         <pattern>
@@ -143,14 +136,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.formation.ouafi.stockage" />
-      <option name="MAIN_CLASS_NAME" value="org.formation.ouafi.stockage.DaoJDBCImplTest" />
-      <option name="METHOD_NAME" value="modifier" />
+      <option name="MAIN_CLASS_NAME" value="org.formation.ouafi.stockage.DaoJPATest" />
+      <option name="METHOD_NAME" value="testCreerSupprimer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoJDBCImplTest.supprimer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaoJPATest.testLire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
       <extension name="coverage">
         <pattern>
@@ -159,8 +152,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.formation.ouafi.stockage" />
-      <option name="MAIN_CLASS_NAME" value="org.formation.ouafi.stockage.DaoJDBCImplTest" />
-      <option name="METHOD_NAME" value="supprimer" />
+      <option name="MAIN_CLASS_NAME" value="org.formation.ouafi.stockage.DaoJPATest" />
+      <option name="METHOD_NAME" value="testLire" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in zoo23 (1)" />
+        <item itemvalue="JUnit.All in zoo23" />
         <item itemvalue="JUnit.DaoJPATest.testLireTous" />
-        <item itemvalue="JUnit.DaoJDBCImplTest.modifier" />
-        <item itemvalue="JUnit.DaoJDBCImplTest.cree" />
-        <item itemvalue="JUnit.DaoJDBCImplTest.supprimer" />
-        <item itemvalue="JUnit.DaoJDBCImplTest.lire" />
+        <item itemvalue="JUnit.DaoJPATest.testCreerSupprimer" />
+        <item itemvalue="JUnit.DaoJPATest.testLire" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +206,7 @@
       <workItem from="1676123356880" duration="14851000" />
       <workItem from="1676206500177" duration="19690000" />
       <workItem from="1676275563432" duration="1614000" />
-      <workItem from="1676361710734" duration="2388000" />
+      <workItem from="1676361710734" duration="9504000" />
     </task>
     <servers />
   </component>
@@ -247,9 +240,23 @@
           <line>40</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJPA.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJPA.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
           <option name="timeStamp" value="8" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
+          <option name="timeStamp" value="33" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -276,6 +283,9 @@
     <SUITE FILE_PATH="coverage/zoo23$All_in_zoo23__1_.ic" NAME="All in zoo23 (1) Coverage Results" MODIFIED="1675440715997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/zoo23$SingeTests.ic" NAME="SingeTests Coverage Results" MODIFIED="1676224421906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>zoo.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/zoo23$DaoJPATest_testLireTous.ic" NAME="DaoJPATest.testLireTous Coverage Results" MODIFIED="1676370926755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.formation.ouafi.stockage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/zoo23$LionTests.ic" NAME="LionTests Coverage Results" MODIFIED="1676224429172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>zoo.*</FILTER>

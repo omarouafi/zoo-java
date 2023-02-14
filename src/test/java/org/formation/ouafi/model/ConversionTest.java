@@ -61,8 +61,6 @@ class ConversionTest {
         assertEquals(gazelle.getLgCornes(), cp.getGazelle().getLgCornes());
 
 
-
-
     }
 
 }

@@ -65,7 +65,7 @@ public class DaoJDBCImpl implements Dao<CagePojo> {
         try {
             jdbc.getCon().setAutoCommit(false);
             PreparedStatement pst = jdbc.getCon().prepareStatement(requete);
-            pst.setString(1,Integer.toString(cp.getId()));
+            pst.setString(1,Integer.toString(cp.getIdAnimal()));
             pst.setString(2,cp.getCodeAnimal());
             pst.setString(3,cp.getNom());
             pst.setString(4,Integer.toString(cp.getAge()));
@@ -100,7 +100,7 @@ public class DaoJDBCImpl implements Dao<CagePojo> {
         Statement st = null;
         ResultSet result = null;
         CagePojo ret = null;
-        ret = this.lire(cp.getId());
+        ret = this.lire(cp.getIdAnimal());
         String requete = "";
         if(ret != null){
             try {
@@ -112,13 +112,13 @@ public class DaoJDBCImpl implements Dao<CagePojo> {
                 pst.setString(3, Double.toString(cp.getPoids()));
                 pst.setString(4, Integer.toString(cp.getX()));
                 pst.setString(5, Integer.toString(cp.getY()));
-                pst.setString(6, Integer.toString(cp.getId()));
+                pst.setString(6, Integer.toString(cp.getIdAnimal()));
                 pst.executeUpdate();
 
                 if(ret.getGazelle() != null){
                     requete = "UPDATE gazelle set idAnimal=?,lgCornes=? where id=?";
                     pst = jdbc.getCon().prepareStatement(requete);
-                    pst.setString(1,Integer.toString(cp.getId()));
+                    pst.setString(1,Integer.toString(cp.getIdAnimal()));
                     pst.setString(2,Double.toString(cp.getGazelle().getLgCornes()));
                     pst.setString(3,Integer.toString(cp.getGazelle().getId()));
                     pst.executeUpdate();
@@ -147,7 +147,7 @@ public class DaoJDBCImpl implements Dao<CagePojo> {
                 jdbc.getCon().setAutoCommit(false);
                 requete = "DELETE from animal where idAnimal=?";
                 PreparedStatement pst = jdbc.getCon().prepareStatement(requete);
-                pst.setString(1,Integer.toString(ret.getId()));
+                pst.setString(1,Integer.toString(ret.getIdAnimal()));
                 pst.executeUpdate();
 
                 if(ret.getGazelle() != null){
@@ -177,14 +177,14 @@ public class DaoJDBCImpl implements Dao<CagePojo> {
             ret.setCodeAnimal(res.getString("codeAnimal"));
             ret.setNom(res.getString("nom"));
             ret.setPoids(res.getDouble("poids"));
-            ret.setId(res.getInt("idAnimal"));
+            ret.setIdAnimal(res.getInt("idAnimal"));
             ret.setY(res.getInt("y"));
             ret.setX(res.getInt("x"));
             ret.setGazelle(null);
             String k = res.getString("codeAnimal");
             if(k != null && k.equals("Gazelle")){
                 gp = new GazellePojo();
-                gp.setIdAnimal(ret.getId());
+                gp.setIdAnimal(ret.getIdAnimal());
                 gp.setLgCornes(res.getInt("lgCornes"));
                 ret.setGazelle(gp);
             }
