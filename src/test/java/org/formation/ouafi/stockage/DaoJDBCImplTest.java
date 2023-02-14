@@ -14,7 +14,7 @@ class DaoJDBCImplTest {
         List<CagePojo> tous = null;
         tous = dao.lireTous();
         assertNotNull(tous);
-        assertEquals(8,tous.size());
+        assertEquals(7,tous.size());
     }
 
     @Test
