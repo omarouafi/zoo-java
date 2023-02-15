@@ -1,19 +1,9 @@
 package org.formation.ouafi.service;
 
 import java.io.Serializable;
+import java.util.StringJoiner;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 /**
  * Classe CagePOJO
@@ -36,8 +26,50 @@ public class CagePojo implements Serializable{
     /**
      * Lion, Singe, Gazelle ==>nom de la classe !!!sans package!!!
      */
+
+    @Transient
+    private String image;
+    @Transient
+    private String pancarde;
     private String codeAnimal;
     private String nom;
+
+    public String getImage() {
+        StringJoiner ret = new StringJoiner("");
+        if(codeAnimal == null){
+            ret.add("images/cage.jpg");
+        }else{
+            ret.add("/images/").add(codeAnimal.toLowerCase()).add("gif");
+        }
+        return ret.toString();
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getPancarde() {
+        StringJoiner temp = new StringJoiner(" ");
+        if(this.codeAnimal == null){
+            temp.add("Cage vide");
+        }else{
+            temp.add(nom).add(Integer.toString(this.age)).add("ans");
+            temp.add(Double.toString(poids)).add("Kg");
+            if(this.codeAnimal.equals("Gazelle")){
+                temp.add(", cornes =").add(Integer.toString(getGazelle().getLgCornes())).add("cm");
+            }
+        }
+
+        return temp.toString();
+
+    }
+
+    public void setPancarde(String pancarde) {
+
+
+        this.pancarde = pancarde;
+    }
+
     private int age;
     private double poids;
     private int x;

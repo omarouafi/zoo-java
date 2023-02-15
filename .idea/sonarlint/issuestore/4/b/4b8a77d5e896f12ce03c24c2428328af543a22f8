@@ -1,0 +1,40 @@
+
+`	java:S112["FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
+`	java:S112^"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112£"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(Ó«®€ıÿÿÿÿ
+e
+java:S2095m"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‰ƒ¾
+b
+java:S2095-"GUse try-with-resources or close this "Statement" in a "finally" clause.(©ËÂşÿÿÿÿ
+e
+java:S2095O"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(å¬©‘
+e
+java:S2095C"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‰ƒ¾
+f
+java:S2095›"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(å¬©‘
+f
+java:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‰ƒ¾
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(©ËÂşÿÿÿÿ
+e
+java:S2095x"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(å¬©‘
+=
+java:S1481;"'Remove this unused "st" local variable.(Œ×Õ³
+A
+java:S1481<"+Remove this unused "result" local variable.(›ôíı
+>
+java:S1481="(Remove this unused "ret" local variable.(íèªŠ
+=
+java:S1481d"'Remove this unused "st" local variable.(Œ×Õ³
+A
+java:S1481e"+Remove this unused "result" local variable.(›ôíı
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+O	java:S106†"9Replace this use of System.out or System.err by a logger.(ú¸î
+>
+java:S1481Œ"'Remove this unused "st" local variable.(Œ×Õ³
+B
+java:S1481"+Remove this unused "result" local variable.(›ôíı
+V	java:S106§"9Replace this use of System.out or System.err by a logger.(ú¸î8é†Ã»ä0
+?	java:S108¿")Either remove or fill this block of code.(É®£

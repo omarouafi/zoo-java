@@ -1,0 +1,18 @@
+
+`	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+c
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¬öš®
+Z
+java:S2147("DCombine this catch with the one at line 38, which has the same body.(åşáÿ
+Z
+java:S2147*"DCombine this catch with the one at line 38, which has the same body.(¯áè
+Z
+java:S2147,"DCombine this catch with the one at line 38, which has the same body.(Å¡ß
+_
+java:S2147."DCombine this catch with the one at line 38, which has the same body.(¼¯•¶ùÿÿÿÿ
+Q
+java:S1128";Remove this unused import 'org.formation.ouafi.model.Cage'.(–Çáß
