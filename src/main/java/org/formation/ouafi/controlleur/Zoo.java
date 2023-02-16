@@ -15,22 +15,31 @@ import org.formation.ouafi.model.technique.PorteException;
 import org.formation.ouafi.service.CagePersistante;
 import org.formation.ouafi.service.CagePojo;
 import org.formation.ouafi.stockage.Dao;
-import org.formation.ouafi.stockage.DaoFactory;
+import org.formation.ouafi.stockage.DaoMemoire;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
-/**
- *
- * @author jacques
- *
- */
+
 public class Zoo {
+//	private static ApplicationContext ctx = new ClassPathXmlApplicationContext("zooSpring.xml");
+//	private static Zoo instance = ctx.getBean("manager",Zoo.class);
 	private static Zoo instance = new Zoo();
+
 	private List<CagePersistante> lesCages;
 	private Dao<CagePojo> dao;
+	public Dao<CagePojo> getDao() {
+		return dao;
+	}
+
+	public void setDao(Dao<CagePojo> dao) {
+		this.dao = dao;
+	}
 
 	private Zoo() {
 		lesCages = new Vector<>();
-		dao = DaoFactory.getInstance().getDao();
+//		dao = DaoFactory.getInstance().getDao();
+		dao = new DaoMemoire();
 		lesCages = dao.lireTous().stream().map(cp->new CagePersistante(cp.getIdAnimal(), dao)).collect(Collectors.toList());
 	}
 
@@ -84,6 +93,10 @@ public class Zoo {
 		}
 		return ret;
 
+	}
+	
+	public List<CagePojo> getPojos(){
+		return lesCages.stream().map(cp -> cp.getCagePojo()).toList();
 	}
 
 	public static Zoo getInstance() {

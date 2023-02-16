@@ -1,23 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>org.formation.galoin</groupId>
+  <groupId>org.formation.ouafi</groupId>
   <artifactId>zoo23</artifactId>
-  <version>1.0</version>
+  <version>0.0.1</version>
   <properties>
-    <java.versions>17</java.versions>
-    <maven.compiler.source>${java.versions}</maven.compiler.source>
-    <maven.compiler.target>${java.versions}</maven.compiler.target>
-    <!--SONAR-->
+    <java.version>18</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <!-- SONAR -->
     <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
+    <sonar.sources>./src/main/java</sonar.sources>
+    <sonar.tests>./src/test/java</sonar.tests>
+    <sonar.exclusions>**/CagePOJO*.*,**/*.xml</sonar.exclusions>
+    <sonar.coverage.exclusions>**/CagePOJO*.*,**/GazellePOJO*.*,**/Lanceur*.*,**/BeurkException*.*,**/PorteException*.*,**/CagePleineException*.*,**/CagePersistante*.*</sonar.coverage.exclusions>
+    <!-- JACOCO +plugin -->
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-    <sonar.dynamicAnalysis>reuseRapports</sonar.dynamicAnalysis>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <sonar.language>java</sonar.language>
     <sonar.scm.provider>git</sonar.scm.provider>
+
+
+
   </properties>
   <dependencies>
     <dependency>
@@ -32,13 +35,14 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.29</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
     <dependency>
-      <groupId>org.hibernate</groupId>
+      <groupId>org.hibernate.orm</groupId>
       <artifactId>hibernate-core</artifactId>
       <version>6.2.0.CR2</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
@@ -56,11 +60,30 @@
       <artifactId>spring-context</artifactId>
       <version>6.0.4</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>6.0.4</version>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
     <dependency>
       <groupId>javax.annotation</groupId>
       <artifactId>javax.annotation-api</artifactId>
       <version>1.3.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
@@ -70,7 +93,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
       </plugin>
-      <!-- jacoco -->
+      <!-- PLUGIN JACOCO -->
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -86,12 +109,10 @@
             <goals>
               <goal>report-aggregate</goal>
             </goals>
-            <phase>verify</phase>
+            <phase>verification</phase>
           </execution>
         </executions>
       </plugin>
     </plugins>
   </build>
-
-
 </project>

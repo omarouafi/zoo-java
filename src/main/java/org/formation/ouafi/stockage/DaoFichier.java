@@ -6,8 +6,15 @@ import java.util.List;
 public class DaoFichier<T> implements Dao<T> {
 
     public List<T> tous;
+    private String nomFichier;
     private static final String NOM="./zoo.data";
     public DaoFichier() {
+        charger();
+    }
+
+    public DaoFichier(String nomFichier) {
+        nomFichier = nomFichier;
+        tous = null;
         charger();
     }
 

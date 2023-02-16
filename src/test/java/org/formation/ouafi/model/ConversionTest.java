@@ -25,7 +25,7 @@ class ConversionTest {
         cp.setAge(3);
         cp.setPoids(123.33);
         cp.setGazelle(null);
-        cage = Conversion.cageToPojo(cp);
+        cage = Conversion.pojoToCage(cp);
 
         assertNotNull(cage.getOccupant());
         assertEquals(cp.getNom(), cage.getOccupant().getNom());
@@ -49,7 +49,7 @@ class ConversionTest {
         cp.setPoids(123.33);
         GazellePojo g1 = new GazellePojo(1,1,12);
         cp.setGazelle(g1);
-        cage = Conversion.cageToPojo(cp);
+        cage = Conversion.pojoToCage(cp);
 
         assertNotNull(cage.getOccupant());
         assertEquals(cp.getNom(), cage.getOccupant().getNom());

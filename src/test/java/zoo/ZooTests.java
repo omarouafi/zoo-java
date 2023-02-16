@@ -15,7 +15,7 @@ class ZooTests {
 	@Test
 	void testNourrir() {
 		List<String> infos = controleur.getInfos();
-		assertEquals(5, infos.size());
+ 		assertEquals(5, infos.size());
 		// Cage VIDE assertEquals("Cage [x=800, y=400]----je suis un(e) Lion je
 		// m'appelle clarence j'ai 10 an(s) et je pèse 215.46666666666667 kg",
 		// infos.get(0));

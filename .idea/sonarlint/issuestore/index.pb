@@ -1,8 +1,6 @@
 
 d
 4src/main/java/org/formation/ouafi/model/Gazelle.java,8\f\8f6cb61ea1568db853d71cc3ecff2554f7212b80
-j
-:src/main/java/org/formation/ouafi/stockage/DaoFichier.java,1\a\1a4ac6197ffb58ef7e8c51d62948b695f25d406f
 u
 Esrc/main/java/org/formation/ouafi/model/technique/PorteException.java,b\f\bfb5064c387dc66ebed1c7e17144b7fe984801ff
 u
@@ -21,18 +19,8 @@ P
  src/test/java/zoo/LionTests.java,a\4\a442851eaf7ed7d08f8042203cf18eb6b7ee8344
 k
 ;src/test/java/org/formation/ouafi/stockage/DaoJDBCTest.java,6\1\6100fc95b9030206bd5ac385aba4bd5726dffc93
-n
->src/test/java/org/formation/ouafi/stockage/DaoMemoireTest.java,c\e\cef9ff5942768cb9319efb0053936247357f715b
-k
-;src/test/java/org/formation/ouafi/model/ConversionTest.java,3\f\3f8ab5ee81108764b10607ebdc9cf6f71591bddb
-c
-3src/main/java/org/formation/ouafi/view/Lanceur.java,7\d\7d5d9797e46e800a936be7a6577e301fd79c3010
-l
-<src/main/java/org/formation/ouafi/utilitaire/Conversion.java,5\4\54c8c50e9b8b61da3c3808c97a84873769de9b19
 k
 ;src/main/java/org/formation/ouafi/stockage/DaoJDBCImpl.java,4\b\4b8a77d5e896f12ce03c24c2428328af543a22f8
-j
-:src/main/java/org/formation/ouafi/stockage/DaoMemoire.java,0\5\05594072b47060eeaeb201ad85f83f0e8a05ca4d
 f
 6src/main/java/org/formation/ouafi/model/Mangeable.java,3\3\333bcce143e11810ca69970b10fb53631d121b7b
 e
@@ -41,11 +29,11 @@ j
 :src/main/java/org/formation/ouafi/stockage/DaoFactory.java,2\6\261482c90896840a4114ff706dd45ead7f7ef462
 a
 1src/main/java/org/formation/ouafi/model/Lion.java,5\c\5c01bf1b8643b8fefaaa67fe6fc8911c73bed869
-f
-6src/main/java/org/formation/ouafi/controlleur/Zoo.java,d\e\debf40311dcb99bd5d1895423b9dca6c85a434d3
->
-zoo.properties,6\3\63c794265098c82dfdcbb15c1b5f6cdc9c7fe429
-j
-:src/test/java/org/formation/ouafi/stockage/DaoJPATest.java,9\e\9eafb28b6e3c435c36191abfe43f69ee1f8a9d84
 a
 1src/main/java/org/formation/ouafi/model/Cage.java,e\9\e9164d2a68534a8065c1bce8fb20eec17c8b060e
+j
+:src/main/java/org/formation/ouafi/service/GazellePojo.java,b\3\b3adf9c1787b0cae38aa42f36629ff2855f857a0
+o
+?src/test/java/org/formation/ouafi/stockage/DaoJDBCImplTest.java,3\6\360d9bda79e569a02e1db62836e9a861d16621ae
+8
+zoo.data,c\4\c4f3f69324d548239bb2103abfb8cb96ba0881c0

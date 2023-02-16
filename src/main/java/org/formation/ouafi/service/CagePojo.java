@@ -39,7 +39,7 @@ public class CagePojo implements Serializable{
         if(codeAnimal == null){
             ret.add("images/cage.jpg");
         }else{
-            ret.add("/images/").add(codeAnimal.toLowerCase()).add("gif");
+            ret.add("images/").add(codeAnimal.toLowerCase()).add(".gif");
         }
         return ret.toString();
     }

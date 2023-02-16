@@ -33,9 +33,11 @@ public class CagePersistante {
         this.stockage=stockage;
         pojo = stockage.lire(id);
         cle = id;
-        modele = Conversion.cageToPojo(pojo);
+        modele = Conversion.pojoToCage(pojo);
     }
-
+    public CagePojo getCagePojo(){
+        return pojo;
+    }
     public void entrer(Animal a) throws PorteException, CagePleineException
     {
         modele.entrer(a);
