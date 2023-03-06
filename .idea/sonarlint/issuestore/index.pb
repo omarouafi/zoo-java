@@ -33,24 +33,14 @@ o
 ?src/test/java/org/formation/ouafi/stockage/DaoJDBCImplTest.java,3\6\360d9bda79e569a02e1db62836e9a861d16621ae
 8
 zoo.data,c\4\c4f3f69324d548239bb2103abfb8cb96ba0881c0
-l
-<src/main/java/org/formation/ouafi/utilitaire/Conversion.java,5\4\54c8c50e9b8b61da3c3808c97a84873769de9b19
 k
 ;src/test/java/org/formation/ouafi/model/ConversionTest.java,3\f\3f8ab5ee81108764b10607ebdc9cf6f71591bddb
-j
-:src/main/java/org/formation/ouafi/stockage/DaoFichier.java,1\a\1a4ac6197ffb58ef7e8c51d62948b695f25d406f
 >
 zoo.properties,6\3\63c794265098c82dfdcbb15c1b5f6cdc9c7fe429
 n
 >src/test/java/org/formation/ouafi/stockage/DaoMemoireTest.java,c\e\cef9ff5942768cb9319efb0053936247357f715b
-O
-src/test/java/zoo/ZooTests.java,3\c\3ccf4d9033eadfe7e284cf2520f22d8ca7574399
 H
 web/META-INF/context.xml,0\b\0b5ed5dfc48d40f738ad3c8e8ec06325e849a9f7
-r
-Bsrc/main/java/org/formation/ouafi/view/controller/InitServlet.java,f\7\f79fc59e6de0b1b2c48218868c8aafb85fcd119b
-u
-Esrc/main/java/org/formation/ouafi/view/controller/NourrirServlet.java,0\3\03e2b01db936e5f87f9aa5414b0f1de5e17982f9
 c
 3src/main/java/org/formation/ouafi/stockage/Dao.java,6\2\6220ffd8d25812fdef736e661a3c9abed78e1dba
 C
@@ -61,5 +51,3 @@ A
 web/principal.jsp,9\3\93dc2e10748fc1daa3cd9dd45f06098f936560de
 j
 :src/main/java/org/formation/ouafi/stockage/DaoMemoire.java,0\5\05594072b47060eeaeb201ad85f83f0e8a05ca4d
-f
-6src/main/java/org/formation/ouafi/controlleur/Zoo.java,d\e\debf40311dcb99bd5d1895423b9dca6c85a434d3

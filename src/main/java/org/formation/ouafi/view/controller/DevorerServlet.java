@@ -9,19 +9,20 @@ import java.io.IOException;
 
 @WebServlet(name = "DevorerServlet", value = "/devorer")
 public class DevorerServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int mangueur_index = Integer.parseInt(request.getParameter("mangeur"));
-        int mange_index = Integer.parseInt(request.getParameter("manger"));
-        String devorerMsg = Zoo.getInstance().devorer(mangueur_index,mange_index);
+        try{
+
+
+        int mangueurIndex = Integer.parseInt(request.getParameter("mangeur"));
+        int mangeIndex = Integer.parseInt(request.getParameter("manger"));
+        String devorerMsg = Zoo.getInstance().devorer(mangueurIndex,mangeIndex);
         request.setAttribute("msg",devorerMsg);
 
         request.getRequestDispatcher("/index.jsp").forward(request,response);
-
+        }catch (Exception e){
+            response.sendError(500,"Quelque chose s'est mal passé");
+        }
     }
 }

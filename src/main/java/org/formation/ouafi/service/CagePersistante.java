@@ -7,18 +7,9 @@ import org.formation.ouafi.model.Mangeable;
 import org.formation.ouafi.model.technique.BeurkException;
 import org.formation.ouafi.model.technique.CagePleineException;
 import org.formation.ouafi.model.technique.PorteException;
-import org.formation.ouafi.service.CagePojo;
 import org.formation.ouafi.stockage.Dao;
 import org.formation.ouafi.utilitaire.Conversion;
 
-
-/**
- * Cette classe est la cage technique avec mise en oeuvre de la persistance dedans.
- * Elle utilise la reïfication
- *
- * @author jacques
- *
- */
 public class CagePersistante {
     private Cage modele;
     private CagePojo pojo;

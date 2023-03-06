@@ -12,8 +12,16 @@ public class DaoFichier<T> implements Dao<T> {
         charger();
     }
 
+    public String getNomFichier() {
+        return nomFichier;
+    }
+
+    public void setNomFichier(String nomFichier) {
+        this.nomFichier = nomFichier;
+    }
+
     public DaoFichier(String nomFichier) {
-        nomFichier = nomFichier;
+        this.nomFichier = nomFichier;
         tous = null;
         charger();
     }

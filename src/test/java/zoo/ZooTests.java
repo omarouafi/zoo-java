@@ -1,13 +1,13 @@
 package zoo;
 
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.util.List;
 
 import org.formation.ouafi.controlleur.Zoo;
+import org.formation.ouafi.stockage.Dao;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class ZooTests {
 	private static Zoo controleur= Zoo.getInstance();
@@ -65,12 +65,17 @@ class ZooTests {
 	@Test
 	void testGetInfos() {
 		List<String> infos = null;
-
 		infos = controleur.getInfos();
 		assertEquals(5, infos.size());
 		assertTrue(infos.get(0).contains("Cage [x=800, y=400]----je suis un(e) Lion je m'appelle clarence "));
 		assertTrue(infos.get(infos.size() - 1).contains("Cage [x=700, y=230]----je suis un(e) Gazelle"));
 
+	}
+
+	@Test
+	void getDao(){
+		Dao dao = controleur.getDao();
+		assertNotNull(dao);
 	}
 
 }

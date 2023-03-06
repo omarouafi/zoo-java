@@ -1,10 +1,8 @@
 package org.formation.ouafi.controlleur;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.formation.ouafi.model.Animal;
@@ -24,9 +22,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Zoo {
 	private static ApplicationContext ctx = new ClassPathXmlApplicationContext("zooSpring.xml");
 	private static Zoo instance = ctx.getBean("manager",Zoo.class);
-
-	//	private static Zoo instance = new Zoo();
-
 	private List<CagePersistante> lesCages;
 	private Dao<CagePojo> dao;
 	public Dao<CagePojo> getDao() {
@@ -39,9 +34,8 @@ public class Zoo {
 
 	private Zoo() {
 		lesCages = new Vector<>();
-//		dao = DaoFactory.getInstance().getDao();
 		dao = new DaoMemoire();
-		lesCages = dao.lireTous().stream().map(cp->new CagePersistante(cp.getIdAnimal(), dao)).collect(Collectors.toList());
+		lesCages = dao.lireTous().stream().map(cp->new CagePersistante(cp.getIdAnimal(), dao)).toList();
 	}
 
 
@@ -72,7 +66,7 @@ public class Zoo {
 				try {
 					lesCages.get(mange).entrer((Animal) laBeteConvoitee);
 				} catch (PorteException | CagePleineException e1) {
-					System.out.println(e1);
+					System.err.println(e1);
 				}
 				lesCages.get(mange).fermer();
 			}

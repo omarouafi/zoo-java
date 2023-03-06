@@ -11,9 +11,13 @@ import java.io.IOException;
 public class NourrirServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        try{
         Zoo zoo = Zoo.getInstance();
         zoo.nourrir();
         request.getRequestDispatcher("/index.jsp").forward(request,response);
+        }catch(Exception e){
+            response.sendError(500, "Quelque chose s'est mal passé");
+        }
     }
 
     @Override

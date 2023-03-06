@@ -12,18 +12,19 @@ import java.util.List;
 
 public final class InitServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    public InitServlet(){
 
-    }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        try{
+
+
         List<CagePojo> modeleCagePojo = Zoo.getInstance().getPojos();
         request.setAttribute("modele",modeleCagePojo);
         request.getRequestDispatcher("principal.jsp").forward(request,response);
+        }catch(Exception e){
+            response.sendError(500,"Quelque chose s'est mal passé");
+        }
     }
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request, response);
-    }
+
 }

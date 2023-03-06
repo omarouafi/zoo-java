@@ -1,12 +1,0 @@
-
-X	java:S125"<This block of commented-out lines of code should be removed.(ÊŠ’ñ8ÁÎÒé0
-]	java:S125*"<This block of commented-out lines of code should be removed.(ë«ˆôÿÿÿÿÿ8çüĞé0
-o
-java:S6204,"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Ûè¾œ8êüĞé0
-U	java:S106K"9Replace this use of System.out or System.err by a logger.(¢¬ê«8¼üĞé0
-k
-java:S1612]"IReplace this lambda with method reference 'CagePersistante::getCagePojo'.(Ãå¹›ùÿÿÿÿ8ÏüĞé0
-T
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8œêÒé0
-Y
-java:S1128"7Remove this unused import 'java.util.stream.Collector'.(ß‹ÎÓøÿÿÿÿ8êÒé0

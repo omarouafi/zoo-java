@@ -54,7 +54,7 @@ public class Conversion {
             } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException
                      | IllegalAccessException | IllegalArgumentException | InvocationTargetException | PorteException
                      | CagePleineException e) {
-                System.out.println(e.getMessage());
+                System.err.println(e.getMessage());
 
             }
         }
