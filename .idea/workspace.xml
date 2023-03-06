@@ -10,19 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a8dc38-a292-4f07-992f-e342b21647a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/generatewar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/587d266bb27a4dc3022bbed44dfa19849df3044c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3adf9c1787b0cae38aa42f36629ff2855f857a0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/principal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/principal.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/controlleur/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/controlleur/Zoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/CagePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/CagePojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/GazellePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/GazellePojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/zooSpring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/zooSpring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/principal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/principal.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +313,7 @@
       <workItem from="1677799383393" duration="4814000" />
       <workItem from="1677805373606" duration="4006000" />
       <workItem from="1677996974412" duration="558000" />
-      <workItem from="1678089873018" duration="354000" />
+      <workItem from="1678089873018" duration="871000" />
     </task>
     <servers />
   </component>

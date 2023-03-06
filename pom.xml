@@ -4,7 +4,7 @@
   <artifactId>zoo23</artifactId>
   <version>0.0.1</version>
   <properties>
-    <java.version>18</java.version>
+    <java.version>17</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <!-- SONAR -->

@@ -65,5 +65,3 @@ j
 :src/main/java/org/formation/ouafi/stockage/DaoMemoire.java,0\5\05594072b47060eeaeb201ad85f83f0e8a05ca4d
 f
 6src/main/java/org/formation/ouafi/controlleur/Zoo.java,d\e\debf40311dcb99bd5d1895423b9dca6c85a434d3
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
