@@ -35,8 +35,6 @@ k
 ;src/test/java/org/formation/ouafi/model/ConversionTest.java,3\f\3f8ab5ee81108764b10607ebdc9cf6f71591bddb
 >
 zoo.properties,6\3\63c794265098c82dfdcbb15c1b5f6cdc9c7fe429
-n
->src/test/java/org/formation/ouafi/stockage/DaoMemoireTest.java,c\e\cef9ff5942768cb9319efb0053936247357f715b
 H
 web/META-INF/context.xml,0\b\0b5ed5dfc48d40f738ad3c8e8ec06325e849a9f7
 c

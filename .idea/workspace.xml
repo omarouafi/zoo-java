@@ -10,14 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a8dc38-a292-4f07-992f-e342b21647a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/formation/ouafi/service/CagePojoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05594072b47060eeaeb201ad85f83f0e8a05ca4d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4694d37f6b19c37b9935119795db3482c45b230e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/cef9ff5942768cb9319efb0053936247357f715b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoMemoire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoMemoire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/zoo/ZooTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zoo/ZooTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +348,7 @@
       <workItem from="1677799383393" duration="4814000" />
       <workItem from="1677805373606" duration="4006000" />
       <workItem from="1677996974412" duration="558000" />
-      <workItem from="1678089873018" duration="6190000" />
+      <workItem from="1678089873018" duration="6999000" />
     </task>
     <servers />
   </component>
@@ -395,11 +392,6 @@
           <line>18</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/formation/ouafi/stockage/DaoMemoireTest.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
           <option name="timeStamp" value="8" />
@@ -436,6 +428,7 @@
     <SUITE FILE_PATH="coverage/zoo23$ConversionTest.ic" NAME="ConversionTest Coverage Results" MODIFIED="1674208275785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.formation.ouafi.model.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/zoo23$All_in_zoo23.ic" NAME="All in zoo23 Coverage Results" MODIFIED="1678097576075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/zoo23$Tomcat.ic" NAME="Tomcat Coverage Results" MODIFIED="1677622993605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/zoo23$ZooTests_getDao.ic" NAME="ZooTests.getDao Coverage Results" MODIFIED="1678093037513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>zoo.*</FILTER>

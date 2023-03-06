@@ -14,10 +14,9 @@ public class DaoMemoire implements Dao<CagePojo> {
     }
 
     private void init() {
-        CagePojo cp = null;
-        GazellePojo gp = null;
 
-        cp = new CagePojo();
+
+        CagePojo cp = new CagePojo();
         cp.setX(800);
         cp.setY(400);
         cp.setIdAnimal(1);
@@ -28,56 +27,56 @@ public class DaoMemoire implements Dao<CagePojo> {
         cp.setGazelle(null);
         pojos.add(cp);
 
-        cp = new CagePojo();
-        cp.setX(200);
-        cp.setY(400);
-        cp.setIdAnimal(2);
-        cp.setCodeAnimal("Gazelle");
-        cp.setNom("GAGAG");
-        cp.setPoids(135.2);
-        cp.setAge(5);
-        gp = new GazellePojo();
+        CagePojo cp2 = new CagePojo();
+        cp2.setX(200);
+        cp2.setY(400);
+        cp2.setIdAnimal(2);
+        cp2.setCodeAnimal("Gazelle");
+        cp2.setNom("GAGAG");
+        cp2.setPoids(135.2);
+        cp2.setAge(5);
+        GazellePojo gp = new GazellePojo();
         gp.setId(1);
         gp.setIdAnimal(2);
         gp.setLgCornes(34);
-        cp.setGazelle(gp);
-        pojos.add(cp);
+        cp2.setGazelle(gp);
+        pojos.add(cp2);
 
-        cp = new CagePojo();
-        cp.setX(500);
-        cp.setY(480);
-        cp.setIdAnimal(3);
-        cp.setCodeAnimal("Singe");
-        cp.setNom("chita");
-        cp.setPoids(38);
-        cp.setAge(4);
-        cp.setGazelle(null);
-        pojos.add(cp);
+        CagePojo cp3 = new CagePojo();
+        cp3.setX(500);
+        cp3.setY(480);
+        cp3.setIdAnimal(3);
+        cp3.setCodeAnimal("Singe");
+        cp3.setNom("chita");
+        cp3.setPoids(38);
+        cp3.setAge(4);
+        cp3.setGazelle(null);
+        pojos.add(cp3);
 
-        cp = new CagePojo();
-        cp.setX(300);
-        cp.setY(300);
-        cp.setIdAnimal(4);
-        cp.setCodeAnimal(null);
-        cp.setNom(null);
-        cp.setPoids(0);
-        cp.setAge(0);
-        pojos.add(cp);
+        CagePojo cp4 = new CagePojo();
+        cp4.setX(300);
+        cp4.setY(300);
+        cp4.setIdAnimal(4);
+        cp4.setCodeAnimal(null);
+        cp4.setNom(null);
+        cp4.setPoids(0);
+        cp4.setAge(0);
+        pojos.add(cp4);
 
-        cp = new CagePojo();
-        cp.setX(700);
-        cp.setY(230);
-        cp.setIdAnimal(5);
-        cp.setCodeAnimal("Gazelle");
-        cp.setNom("Beep Beep");
-        cp.setPoids(135.2);
-        cp.setAge(5);
-        gp = new GazellePojo();
-        gp.setId(2);
-        gp.setIdAnimal(5);
-        gp.setLgCornes(23);
-        cp.setGazelle(gp);
-        pojos.add(cp);
+        CagePojo cp5 = new CagePojo();
+        cp5.setX(700);
+        cp5.setY(230);
+        cp5.setIdAnimal(5);
+        cp5.setCodeAnimal("Gazelle");
+        cp5.setNom("Beep Beep");
+        cp5.setPoids(135.2);
+        cp5.setAge(5);
+        GazellePojo gp2 = new GazellePojo();
+        gp2.setId(2);
+        gp2.setIdAnimal(5);
+        gp2.setLgCornes(23);
+        cp5.setGazelle(gp2);
+        pojos.add(cp5);
     }
     public List<CagePojo> lireTous(){
         return pojos;
