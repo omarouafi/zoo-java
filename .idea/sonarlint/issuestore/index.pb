@@ -39,8 +39,6 @@ k
 ;src/test/java/org/formation/ouafi/model/ConversionTest.java,3\f\3f8ab5ee81108764b10607ebdc9cf6f71591bddb
 j
 :src/main/java/org/formation/ouafi/stockage/DaoFichier.java,1\a\1a4ac6197ffb58ef7e8c51d62948b695f25d406f
-g
-7src/main/java/org/formation/ouafi/stockage/DaoJDBC.java,d\b\db56f491a99cfb1b10d2d3722636ca6903b85c6d
 >
 zoo.properties,6\3\63c794265098c82dfdcbb15c1b5f6cdc9c7fe429
 n
