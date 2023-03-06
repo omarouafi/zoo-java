@@ -3,7 +3,6 @@ package org.formation.ouafi.stockage;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.formation.ouafi.model.Animal;
 import org.formation.ouafi.service.CagePojo;
 import org.formation.ouafi.service.GazellePojo;
 

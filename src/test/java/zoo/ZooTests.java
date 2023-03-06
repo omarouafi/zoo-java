@@ -4,6 +4,7 @@ package zoo;
 import java.util.List;
 
 import org.formation.ouafi.controlleur.Zoo;
+import org.formation.ouafi.service.CagePojo;
 import org.formation.ouafi.stockage.Dao;
 import org.junit.jupiter.api.Test;
 
@@ -76,6 +77,12 @@ class ZooTests {
 	void getDao(){
 		Dao dao = controleur.getDao();
 		assertNotNull(dao);
+	}
+
+	@Test
+	void getPojos(){
+		List<CagePojo> cps = controleur.getPojos();
+		assertEquals(cps.size(),5);
 	}
 
 }

@@ -9,8 +9,6 @@ c
 3src/main/java/org/formation/ouafi/model/Animal.java,9\b\9b7d9cce28d71c9384c59fb5348a212d2c71cf32
 Q
 !src/test/java/zoo/SingeTests.java,9\0\9020046b0eb323e28c330a037d74c7bafa67da87
-S
-#src/test/java/zoo/GazelleTests.java,4\6\4694d37f6b19c37b9935119795db3482c45b230e
 n
 >src/test/java/org/formation/ouafi/stockage/DaoFichierTest.java,0\e\0e4708d6a9dcd22d1169232222d8722279792a43
 P
@@ -49,5 +47,3 @@ C
 web/index.jsp,9\f\9f198ed450f32e45b10ec3c2b1406e609b4a96cd
 A
 web/principal.jsp,9\3\93dc2e10748fc1daa3cd9dd45f06098f936560de
-j
-:src/main/java/org/formation/ouafi/stockage/DaoMemoire.java,0\5\05594072b47060eeaeb201ad85f83f0e8a05ca4d
