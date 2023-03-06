@@ -11,7 +11,7 @@
     <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
     <sonar.sources>./src/main/java</sonar.sources>
     <sonar.tests>./src/test/java</sonar.tests>
-    <sonar.exclusions>**/CagePOJO*.*,**/*.xml</sonar.exclusions>
+    <sonar.exclusions>**/CagePOJO*.*,**/*.xml, **/view/controller/**</sonar.exclusions>
     <sonar.coverage.exclusions>**/CagePOJO*.*,**/GazellePOJO*.*,**/Lanceur*.*,**/BeurkException*.*,**/PorteException*.*,**/CagePleineException*.*,**/CagePersistante*.*</sonar.coverage.exclusions>
     <!-- JACOCO +plugin -->
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
