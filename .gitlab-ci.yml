@@ -27,6 +27,8 @@ variables:
   MYSQL_HOST: 'mysql'
   MYSQL_DATABASE: 'zoo'
   MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+  MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
 cache:
   key: "${CI_JOB_NAME}"
   paths:
@@ -37,6 +39,7 @@ stages:          # List of stages for jobs, and their order of execution
   - build
   - connect
   - test
+  - package
   - quality
   - deploy
 
@@ -56,6 +59,7 @@ unit-test-job:   # This job runs in the test stage.
   stage: test    # It only starts when the job in the build stage completes successfully.
   script:
     - 'mvn test'
+    - 'mvn $MAVEN_CLI_OPTS test'
 
 quality-job:
   stage: quality
@@ -67,10 +71,17 @@ quality-job:
   only:
     - master
 
+package-job:
+  stage: package
+  script:
+    - mvn $MAVEN_CLI_OPTS package -Dmaven.test.skip=true
+    - echo "Packaging the code"
+
 deploy-job:      # This job runs in the deploy stage.
   stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
+    - mvn $MAVEN_CLI_OPTS deploy -Dmaven.test.skip=true
     - echo "Deploying application..."
     - echo "Application successfully deployed."
 
