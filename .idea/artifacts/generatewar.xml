@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="generatewar">
+    <output-path>$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF</output-path>
+    <root id="root" />
+  </artifact>
+</component>

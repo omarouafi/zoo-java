@@ -12,9 +12,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="gazelle")
 public class GazellePojo implements Serializable{
-    /**
-     *
-     */
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY )

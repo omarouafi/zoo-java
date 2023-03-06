@@ -5,27 +5,17 @@ import java.util.StringJoiner;
 
 import jakarta.persistence.*;
 
-/**
- * Classe CagePOJO
- * @author hp
- *
- */
 @Entity
 @Table(name ="animal")
 @NamedQuery(name="tous",query="SELECT cp FROM CagePojo cp")
 @NamedQuery(name="un",query="SELECT cp FROM CagePojo AS cp WHERE cp.idAnimal=:bestiole")
 @NamedQuery(name="derniere" , query="SELECT cp.idAnimal FROM CagePojo cp ORDER BY idAnimal DESC LIMIT 1")
 public class CagePojo implements Serializable{
-    /**
-     *
-     */
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idAnimal;
-    /**
-     * Lion, Singe, Gazelle ==>nom de la classe !!!sans package!!!
-     */
 
     @Transient
     private String image;

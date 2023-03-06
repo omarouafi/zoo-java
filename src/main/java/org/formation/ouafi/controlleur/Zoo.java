@@ -22,9 +22,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 public class Zoo {
-//	private static ApplicationContext ctx = new ClassPathXmlApplicationContext("zooSpring.xml");
-//	private static Zoo instance = ctx.getBean("manager",Zoo.class);
-	private static Zoo instance = new Zoo();
+	private static ApplicationContext ctx = new ClassPathXmlApplicationContext("zooSpring.xml");
+	private static Zoo instance = ctx.getBean("manager",Zoo.class);
+
+	//	private static Zoo instance = new Zoo();
 
 	private List<CagePersistante> lesCages;
 	private Dao<CagePojo> dao;
@@ -43,9 +44,7 @@ public class Zoo {
 		lesCages = dao.lireTous().stream().map(cp->new CagePersistante(cp.getIdAnimal(), dao)).collect(Collectors.toList());
 	}
 
-	/**
-	 * Permet de nourrir tous les animaux du zoo
-	 */
+
 	public void nourrir() {
 		for (int i = 0; i < lesCages.size(); i++) {
 			if (lesCages.get(i).getOccupant() != null) {
@@ -54,12 +53,7 @@ public class Zoo {
 		}
 	}
 
-	/**
-	 *
-	 * @param mangeur indice de l'animal mangeur (sa cage)
-	 * @param mange   indice de la cage de la proie
-	 * @return le texte sur ce qu'il s'est passé
-	 */
+
 	public String devorer(int mangeur, int mange) {
 		Mangeable laBeteConvoitee = null;
 		String s = "INCOMPATIBLE";
