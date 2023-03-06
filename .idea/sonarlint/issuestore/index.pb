@@ -9,8 +9,6 @@ c
 3src/main/java/org/formation/ouafi/model/Animal.java,9\b\9b7d9cce28d71c9384c59fb5348a212d2c71cf32
 Q
 !src/test/java/zoo/SingeTests.java,9\0\9020046b0eb323e28c330a037d74c7bafa67da87
-n
->src/test/java/org/formation/ouafi/stockage/DaoFichierTest.java,0\e\0e4708d6a9dcd22d1169232222d8722279792a43
 P
  src/test/java/zoo/LionTests.java,a\4\a442851eaf7ed7d08f8042203cf18eb6b7ee8344
 k

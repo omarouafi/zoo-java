@@ -55,7 +55,7 @@ public class DaoFichier<T> implements Dao<T> {
         try(ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream((NOM)))) {
              os.writeObject(tous);
         }catch (IOException e) {
-            throw new RuntimeException(e);
+            System.err.println(e);
         }
     }
 

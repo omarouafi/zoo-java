@@ -103,6 +103,13 @@ class DaoFichierTest {
         CagePojo cp1 = dao.lire(tous.indexOf(cp));
         assertEquals(cp1.getNom(),"Sop");
         assertEquals(cp1.getCodeAnimal(),"Singe");
-
     }
+
+    @Test
+    void setGetNomFichier(){
+        DaoFichier<CagePojo> dao = new DaoFichier<CagePojo>();
+        dao.setNomFichier("test");
+        assertEquals(dao.getNomFichier(),"test");
+    }
+
 }
