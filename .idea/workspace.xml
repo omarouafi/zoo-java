@@ -10,21 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a8dc38-a292-4f07-992f-e342b21647a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48f17bf767a58ed4e28e55fadbbdcc44a19a40c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54c8c50e9b8b61da3c3808c97a84873769de9b19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c01bf1b8643b8fefaaa67fe6fc8911c73bed869" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/78e66956b64df0fbe1316021533e1a8bf52c7baf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b7d9cce28d71c9384c59fb5348a212d2c71cf32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/org/formation/ouafi/view/controller/InitServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/org/formation/ouafi/view/controller/InitServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/principal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/principal.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/controlleur/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/controlleur/Zoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/CagePersistante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/service/CagePersistante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/DevorerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/DevorerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/InitServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/principal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/principal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +98,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.formation.ouafi.view.controller" />
       <recent name="org.formation.ouafi.stockage" />
       <recent name="org.formation.ouafi.model" />
     </key>
@@ -118,7 +106,7 @@
   <component name="RunDashboard">
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.All in zoo23 (2)">
+  <component name="RunManager" selected="JUnit.All in zoo23">
     <configuration name="All in zoo23 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
       <option name="PACKAGE_NAME" value="" />
@@ -135,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in zoo23 (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in zoo23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -174,17 +162,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZooTests.testGetInfos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DevorerServletTest.testDoPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zoo.*" />
+          <option name="PATTERN" value="org.formation.ouafi.view.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zoo" />
-      <option name="MAIN_CLASS_NAME" value="zoo.ZooTests" />
-      <option name="METHOD_NAME" value="testGetInfos" />
+      <option name="PACKAGE_NAME" value="org.formation.ouafi.view.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.formation.ouafi.view.controller.DevorerServletTest" />
+      <option name="METHOD_NAME" value="testDoPost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,8 +284,8 @@
     <list>
       <item itemvalue="JUnit.DaoJDBCImplTest.lireTous" />
       <item itemvalue="JUnit.DaoMemoireTests" />
-      <item itemvalue="JUnit.All in zoo23 (3)" />
-      <item itemvalue="JUnit.ZooTests.testGetInfos" />
+      <item itemvalue="JUnit.All in zoo23" />
+      <item itemvalue="JUnit.DevorerServletTest.testDoPost" />
       <item itemvalue="JUnit.ZooTests.testNourrir" />
       <item itemvalue="JUnit.All in zoo23 (2)" />
       <item itemvalue="JUnit.All in zoo23 (1)" />
@@ -305,11 +293,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in zoo23" />
+        <item itemvalue="JUnit.DevorerServletTest.testDoPost" />
         <item itemvalue="JUnit.All in zoo23 (2)" />
         <item itemvalue="JUnit.All in zoo23 (1)" />
         <item itemvalue="JUnit.ZooTests.testNourrir" />
-        <item itemvalue="JUnit.ZooTests.testGetInfos" />
-        <item itemvalue="JUnit.All in zoo23 (3)" />
       </list>
     </recent_temporary>
   </component>
