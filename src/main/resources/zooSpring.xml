@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean name="manager" id="manager" class="org.formation.ouafi.controlleur.Zoo">
-        <property name="dao" ref="jpa"></property>
+        <property name="dao" ref="memoire"></property>
     </bean>
-    <bean name="jpa" id="jpa" class="org.formation.ouafi.stockage.DaoJPA"></bean>
+<!--    <bean name="jpa" id="jpa" class="org.formation.ouafi.stockage.DaoJPA"></bean>-->
     <bean name="memoire" id="memoire" class="org.formation.ouafi.stockage.DaoMemoire"></bean>
     <bean name="fichier" id="fichier" class="org.formation.ouafi.stockage.DaoFichier">
         <constructor-arg index="0" value="./zoo.data"></constructor-arg>

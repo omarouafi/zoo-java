@@ -10,9 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a8dc38-a292-4f07-992f-e342b21647a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f198ed450f32e45b10ec3c2b1406e609b4a96cd" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-6.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-6.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-6.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-core-6.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-6.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-jcl-6.0.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03e2b01db936e5f87f9aa5414b0f1de5e17982f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b5ed5dfc48d40f738ad3c8e8ec06325e849a9f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63c794265098c82dfdcbb15c1b5f6cdc9c7fe429" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/9310863703e3e75be67de4fac87bed4eb9705ae4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/93dc2e10748fc1daa3cd9dd45f06098f936560de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/debf40311dcb99bd5d1895423b9dca6c85a434d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f79fc59e6de0b1b2c48218868c8aafb85fcd119b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/org/formation/ouafi/stockage/DaoJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/org/formation/ouafi/stockage/DaoJDBC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/org/formation/ouafi/view/controller/InitServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/org/formation/ouafi/view/controller/InitServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/zooSpring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/WEB-INF/classes/zooSpring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/principal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zoo23_Web_exploded/principal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/stockage/DaoJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/DevorerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/DevorerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/InitServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/NourrirServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/formation/ouafi/view/controller/NourrirServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/zooSpring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/zooSpring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/principal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/principal.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,31 +81,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Cloud/amu/zoodto&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8143b82d62c578c2472d3eedd2148373&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "last_opened_file_path": "C:/apache-tomcat-10.1.7-windows-x64/apache-tomcat-10.1.7/bin/catalina.bat",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.externalTools",
+    "spring.configuration.checksum": "8143b82d62c578c2472d3eedd2148373"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Cloud\amu\zoo23\web" />
@@ -103,6 +129,9 @@
       <recent name="org.formation.ouafi.model" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="openRunningConfigInTab" value="true" />
+  </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration name="All in zoo23 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
@@ -112,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in zoo23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in zoo23 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo23" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -199,7 +228,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.73" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.7" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="zoo23:Web exploded">
@@ -289,20 +318,20 @@
     <list>
       <item itemvalue="JUnit.DaoJDBCImplTest.lireTous" />
       <item itemvalue="JUnit.DaoMemoireTests" />
+      <item itemvalue="JUnit.All in zoo23 (2)" />
       <item itemvalue="JUnit.All in zoo23 (1)" />
       <item itemvalue="JUnit.CagePojoTests.getPancarde" />
       <item itemvalue="JUnit.CagePojoTests.testPancard" />
       <item itemvalue="JUnit.DaoMemoireTests.testSupprimer" />
-      <item itemvalue="JUnit.All in zoo23" />
       <item itemvalue="Tomcat Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in zoo23 (2)" />
         <item itemvalue="JUnit.All in zoo23 (1)" />
         <item itemvalue="JUnit.CagePojoTests.testPancard" />
         <item itemvalue="JUnit.CagePojoTests.getPancarde" />
         <item itemvalue="JUnit.DaoMemoireTests.testSupprimer" />
-        <item itemvalue="JUnit.All in zoo23" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +369,7 @@
       <workItem from="1677996974412" duration="558000" />
       <workItem from="1678089873018" duration="10552000" />
       <workItem from="1678115330044" duration="1579000" />
-      <workItem from="1678547386844" duration="899000" />
+      <workItem from="1678547386844" duration="9271000" />
     </task>
     <servers />
   </component>
@@ -392,12 +421,6 @@
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
           <option name="timeStamp" value="33" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/org/formation/ouafi/controlleur/Zoo.java</url>
-          <line>23</line>
-          <properties field="instance" class="org.formation.ouafi.controlleur.Zoo" />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

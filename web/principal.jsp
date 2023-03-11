@@ -1,5 +1,7 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
-<html cmlns:th="http://www.thymleaf.org" >
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>zoo en folie</title><link rel="stylesheet" type="text/css" href="zoo.css"></link></head><body>
@@ -21,13 +23,15 @@
 	<form name="fzoo" action="/zoophp/org/formation/zoo/controleurs/controleur.php" method="post">
 		<input type="hidden" value="devorer" name="action"/>
 
-		<div th:each="bete:${modele}"  th:style="${'position:absolute;top:'+bete.y +'px;left:'+bete.x+'px}">
-			<img  src="${bete.image}" class="animal"/>
-			<div class="afficheAnimal" th:text="${bete.pancarte}" ><br/>
-				<input type="radio" name="mangeur" value="0"> Mangeur &nbsp;&nbsp;
-				<input type="radio" name="mange" value="0"> Mange<br></div>
-		</div>
-
+		<c:forEach var ="bete" items="${modele}" >
+			<div style="position:absolute;top:+${bete.getY()}px;left:${bete.getX()}px">
+				<img  src="${bete.getImage()}" class="animal"/>
+				<div class="afficheAnimal" >${bete.getPancarde()}<br/>
+					<input type="radio" name="mangeur" value="${bete.getIdAnimal()-1}"> Mangeur &nbsp;&nbsp;
+					<input type="radio" name="mange" value="${bete.getIdAnimal()-1}"> Mange<br>
+				</div>
+			</div>
+		</c:forEach>
 		<div id="visiteurs" >
 			<img class="visiteur" src="images/visiteur.png"/>
 			<img class="visiteur" src="images/visiteur.png"/>

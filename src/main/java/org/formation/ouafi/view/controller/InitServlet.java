@@ -5,8 +5,8 @@ package org.formation.ouafi.view.controller;
 import org.formation.ouafi.controlleur.Zoo;
 import org.formation.ouafi.service.CagePojo;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
 import java.io.IOException;
 import java.util.List;
 
@@ -16,13 +16,13 @@ public final class InitServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try{
+        Zoo controleur= Zoo.getInstance();
 
-
-        List<CagePojo> modeleCagePojo = Zoo.getInstance().getPojos();
+        List<CagePojo> modeleCagePojo = controleur.getPojos();
         request.setAttribute("modele",modeleCagePojo);
         request.getRequestDispatcher("principal.jsp").forward(request,response);
         }catch(Exception e){
-            response.sendError(500,"Quelque chose s'est mal passé");
+            response.sendError(500,e.getMessage());
         }
     }
 
