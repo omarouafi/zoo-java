@@ -39,8 +39,6 @@ c
 3src/main/java/org/formation/ouafi/stockage/Dao.java,6\2\6220ffd8d25812fdef736e661a3c9abed78e1dba
 C
 web/WEB-INF/web.xml,c\d\cdcc12da5c4054f6995aab32914d7e0243194c05
-=
-web/index.jsp,9\f\9f198ed450f32e45b10ec3c2b1406e609b4a96cd
 A
 web/principal.jsp,9\3\93dc2e10748fc1daa3cd9dd45f06098f936560de
 f
@@ -65,3 +63,5 @@ r
 Bsrc/main/java/org/formation/ouafi/view/controller/InitServlet.java,f\7\f79fc59e6de0b1b2c48218868c8aafb85fcd119b
 S
 #src/test/java/zoo/GazelleTests.java,4\6\4694d37f6b19c37b9935119795db3482c45b230e
+n
+>src/test/java/org/formation/ouafi/stockage/DaoMemoireTest.java,c\e\cef9ff5942768cb9319efb0053936247357f715b

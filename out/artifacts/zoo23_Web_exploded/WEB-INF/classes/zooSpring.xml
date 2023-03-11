@@ -7,7 +7,7 @@
     </bean>
     <bean name="jpa" id="jpa" class="org.formation.ouafi.stockage.DaoJPA"></bean>
     <bean name="memoire" id="memoire" class="org.formation.ouafi.stockage.DaoMemoire"></bean>
-    <bean name="ficheir" id="fichier" class="org.formation.ouafi.stockage.DaoFichier">
+    <bean name="fichier" id="fichier" class="org.formation.ouafi.stockage.DaoFichier">
         <constructor-arg index="0" value="./zoo.data"></constructor-arg>
     </bean>
 
