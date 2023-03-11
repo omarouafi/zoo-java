@@ -10,8 +10,6 @@ Q
 P
  src/test/java/zoo/LionTests.java,a\4\a442851eaf7ed7d08f8042203cf18eb6b7ee8344
 k
-;src/test/java/org/formation/ouafi/stockage/DaoJDBCTest.java,6\1\6100fc95b9030206bd5ac385aba4bd5726dffc93
-k
 ;src/main/java/org/formation/ouafi/stockage/DaoJDBCImpl.java,4\b\4b8a77d5e896f12ce03c24c2428328af543a22f8
 f
 6src/main/java/org/formation/ouafi/model/Mangeable.java,3\3\333bcce143e11810ca69970b10fb53631d121b7b
