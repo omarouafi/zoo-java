@@ -82,13 +82,15 @@ public class CagePersistante {
             sauver();
         }
     }
-    public void devorer(Mangeable autre) throws BeurkException
+    public String devorer(Mangeable autre) throws BeurkException
     {
         if(estOccupee())
         {
             modele.getOccupant().manger(autre);
             sauver();
+            return "Miam miam";
         }
+        return "";
     }
     @Override
     public String toString() {

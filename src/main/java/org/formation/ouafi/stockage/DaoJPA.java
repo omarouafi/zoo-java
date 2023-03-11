@@ -4,7 +4,6 @@ import java.util.List;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Persistence;
-import org.formation.ouafi.stockage.Dao;
 
 public class DaoJPA<T> implements Dao<T> {
 

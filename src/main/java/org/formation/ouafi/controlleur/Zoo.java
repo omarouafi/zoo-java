@@ -40,11 +40,9 @@ public class Zoo {
 
 
 	public void nourrir() {
-		for (int i = 0; i < lesCages.size(); i++) {
-			if (lesCages.get(i).getOccupant() != null) {
-				lesCages.get(i).nourrirOccupant();
-			}
-		}
+		lesCages.stream()
+				.filter(cage -> cage.getOccupant() != null)
+				.forEach(cage -> cage.nourrirOccupant());
 	}
 
 
@@ -60,7 +58,7 @@ public class Zoo {
 				e2.printStackTrace();
 			}
 			try {
-				s = lesCages.get(mangeur).getOccupant().manger(laBeteConvoitee);
+				s = lesCages.get(mangeur).devorer(laBeteConvoitee);
 			} catch (BeurkException e) {
 				s = e.getMessage();
 				try {
@@ -76,9 +74,7 @@ public class Zoo {
 
 	public List<String> getInfos() {
 		List<String> ret = new ArrayList<>();
-		for (CagePersistante cage : lesCages) {
-			ret.add(cage.toString());
-		}
+		lesCages.forEach(cage -> ret.add(cage.toString()));
 		return ret;
 
 	}

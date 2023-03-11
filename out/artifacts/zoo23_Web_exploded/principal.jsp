@@ -11,7 +11,7 @@
 </header>
 <nav>
 	<ul>
-		<li><a href="/zoophp/org/formation/zoo/controleurs/controleur.php?action=manger">nourrir animaux</a></li>
+		<li><a href="${pageContext.request.contextPath}/nourrir">nourrir animaux</a></li>
 		<li><a href="#" onclick="document.fzoo.submit();">devorer</a></li>
 		<li><a href="/zoophp/org/formation/zoo/controleurs/controleur.php?action=entrer">faire entrer un visiteur</a></li>
 		<li><a href="/zoophp/org/formation/zoo/controleurs/controleur.php?action=sortir">faire sortir un visiteur</a></li>
@@ -20,7 +20,7 @@
 </nav>
 <article>
 	<img alt="mon zoo" src="images/plan-zoo.jpg" width="100%" height="100%"/>
-	<form name="fzoo" action="/zoophp/org/formation/zoo/controleurs/controleur.php" method="post">
+	<form name="fzoo" action="${pageContext.request.contextPath}/devorer" method="post">
 		<input type="hidden" value="devorer" name="action"/>
 
 		<c:forEach var ="bete" items="${modele}" >
@@ -40,6 +40,14 @@
 </article>
 
 <footer class="pied" id="pied">
+	<%
+		String msg = (String) request.getAttribute("msg");
+		if(msg != null){
+			out.println(msg);
+		}
+
+	%>
 </footer>
 </body>
 </html>
+

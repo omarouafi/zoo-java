@@ -5,8 +5,6 @@ u
 Esrc/main/java/org/formation/ouafi/model/technique/PorteException.java,b\f\bfb5064c387dc66ebed1c7e17144b7fe984801ff
 u
 Esrc/main/java/org/formation/ouafi/model/technique/BeurkException.java,6\e\6e7d0c90972832992100facd549983562408803e
-c
-3src/main/java/org/formation/ouafi/model/Animal.java,9\b\9b7d9cce28d71c9384c59fb5348a212d2c71cf32
 Q
 !src/test/java/zoo/SingeTests.java,9\0\9020046b0eb323e28c330a037d74c7bafa67da87
 P
@@ -22,8 +20,6 @@ e
 j
 :src/main/java/org/formation/ouafi/stockage/DaoFactory.java,2\6\261482c90896840a4114ff706dd45ead7f7ef462
 a
-1src/main/java/org/formation/ouafi/model/Lion.java,5\c\5c01bf1b8643b8fefaaa67fe6fc8911c73bed869
-a
 1src/main/java/org/formation/ouafi/model/Cage.java,e\9\e9164d2a68534a8065c1bce8fb20eec17c8b060e
 o
 ?src/test/java/org/formation/ouafi/stockage/DaoJDBCImplTest.java,3\6\360d9bda79e569a02e1db62836e9a861d16621ae
@@ -35,18 +31,12 @@ c
 3src/main/java/org/formation/ouafi/stockage/Dao.java,6\2\6220ffd8d25812fdef736e661a3c9abed78e1dba
 C
 web/WEB-INF/web.xml,c\d\cdcc12da5c4054f6995aab32914d7e0243194c05
-f
-6src/main/java/org/formation/ouafi/stockage/DaoJPA.java,4\8\48f17bf767a58ed4e28e55fadbbdcc44a19a40c1
 j
 :src/test/java/org/formation/ouafi/stockage/DaoJPATest.java,9\e\9eafb28b6e3c435c36191abfe43f69ee1f8a9d84
 j
 :src/main/java/org/formation/ouafi/service/GazellePojo.java,b\3\b3adf9c1787b0cae38aa42f36629ff2855f857a0
 c
 3src/main/java/org/formation/ouafi/view/Lanceur.java,7\d\7d5d9797e46e800a936be7a6577e301fd79c3010
-n
->src/main/java/org/formation/ouafi/service/CagePersistante.java,7\8\78e66956b64df0fbe1316021533e1a8bf52c7baf
-l
-<src/main/java/org/formation/ouafi/utilitaire/Conversion.java,5\4\54c8c50e9b8b61da3c3808c97a84873769de9b19
 S
 #src/test/java/zoo/GazelleTests.java,4\6\4694d37f6b19c37b9935119795db3482c45b230e
 n

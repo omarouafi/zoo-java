@@ -16,11 +16,11 @@ public class DevorerServlet extends HttpServlet {
 
 
         int mangueurIndex = Integer.parseInt(request.getParameter("mangeur"));
-        int mangeIndex = Integer.parseInt(request.getParameter("manger"));
+        int mangeIndex = Integer.parseInt(request.getParameter("mange"));
         String devorerMsg = Zoo.getInstance().devorer(mangueurIndex,mangeIndex);
-        request.setAttribute("msg",devorerMsg);
 
-        request.getRequestDispatcher("/index.jsp").forward(request,response);
+        response.sendRedirect(request.getContextPath() + "?msg="+devorerMsg);
+
         }catch (Exception e){
             response.sendError(500,"Quelque chose s'est mal passé");
         }
