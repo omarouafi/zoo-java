@@ -30,8 +30,6 @@ c
 C
 web/WEB-INF/web.xml,c\d\cdcc12da5c4054f6995aab32914d7e0243194c05
 j
-:src/test/java/org/formation/ouafi/stockage/DaoJPATest.java,9\e\9eafb28b6e3c435c36191abfe43f69ee1f8a9d84
-j
 :src/main/java/org/formation/ouafi/service/GazellePojo.java,b\3\b3adf9c1787b0cae38aa42f36629ff2855f857a0
 c
 3src/main/java/org/formation/ouafi/view/Lanceur.java,7\d\7d5d9797e46e800a936be7a6577e301fd79c3010

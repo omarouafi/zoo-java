@@ -23,6 +23,18 @@
 
   </properties>
 
+  <repositories>
+    <repository>
+      <id>central</id>
+      <name>Central</name>
+      <url>${env.Nexus_REPO_URL}central/</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Snapshots</name>
+      <url>${env.Nexus_REPO_URL}snapshots/</url>
+    </snapshotRepository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -90,6 +102,7 @@
 
 
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -109,6 +122,7 @@
           </archive>
         </configuration>
       </plugin>
+
       <!-- PLUGIN JACOCO -->
       <plugin>
         <groupId>org.jacoco</groupId>
