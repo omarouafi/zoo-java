@@ -23,18 +23,18 @@
 
   </properties>
 
-  <repositories>
+  <distributionManagement>
     <repository>
-      <id>central</id>
-      <name>Central</name>
-      <url>${env.Nexus_REPO_URL}central/</url>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>https://repo.adms.dil.univ-mrs.fr/repository/maven_adms</url>
     </repository>
     <snapshotRepository>
-      <id>snapshots</id>
-      <name>Snapshots</name>
-      <url>${env.Nexus_REPO_URL}snapshots/</url>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>https://repo.adms.dil.univ-mrs.fr/repository/maven_adms</url>
     </snapshotRepository>
-  </repositories>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
